@@ -4,6 +4,7 @@ namespace App\Commands;
 use Telegram\Bot\Commands\Command;
 use Predis\Client as Predis;
 use App\Spiders\Announcement\BterSpider;
+use App\Spiders\Announcement\JubiSpider;
 use App\Spiders\NoticeCollector;
 
 class TopicSpiderCommand extends Command
@@ -34,6 +35,7 @@ DESC;
         $this->redisHandle = new Predis();
         $this->collector = new NoticeCollector([
             BterSpider::class,
+            JubiSpider::class
         ]);
     }
 
