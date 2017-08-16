@@ -5,6 +5,7 @@ use App\Spiders\Announcement\B8wangSpider;
 use App\Spiders\Announcement\BterSpider;
 use App\Spiders\Announcement\JubiSpider;
 use App\Spiders\Announcement\BinanceSpider;
+use App\Spiders\Announcement\SzzcSpider;
 use Telegram\Bot\Commands\Command;
 use Predis\Client as Predis;
 use App\Spiders\NoticeCollector;
@@ -40,6 +41,7 @@ DESC;
             JubiSpider::class,
             BinanceSpider::class,
             B8wangSpider::class,
+            SzzcSpider::class,
         ]);
     }
 
