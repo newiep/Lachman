@@ -2,6 +2,7 @@
 
 namespace App\Commands;
 use App\Spiders\Announcement\B8wangSpider;
+use App\Spiders\Announcement\Btc9Spider;
 use App\Spiders\Announcement\BterSpider;
 use App\Spiders\Announcement\JubiSpider;
 use App\Spiders\Announcement\BinanceSpider;
@@ -42,6 +43,7 @@ DESC;
             BinanceSpider::class,
             B8wangSpider::class,
             SzzcSpider::class,
+            Btc9Spider::class,
         ]);
     }
 
